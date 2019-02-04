@@ -1,0 +1,3 @@
+com\kaeam\react\service\AppRestController.class
+com\kaeam\react\service\Application.class
+com\kaeam\react\service\DefaultWebSecurityConfig.class

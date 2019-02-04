@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="C:\Users\Joanna\git\kaeam-react-spring\kaeam-react-spring-service\target/classes/public">
+    <fileset dir="C:\Users\Joanna\git\kaeam-react-spring\kaeam-react-spring-service/reactapp/build"/>
+  </copy>
+</target>
+</project>
