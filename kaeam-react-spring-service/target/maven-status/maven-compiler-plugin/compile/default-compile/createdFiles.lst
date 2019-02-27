@@ -1,3 +1,7 @@
 com\kaeam\react\service\AppRestController.class
+com\kaeam\react\service\ProcessInstanceRestController.class
+com\kaeam\react\service\UserTaskRestController.class
+com\kaeam\react\service\DeployProcessRestController.class
 com\kaeam\react\service\Application.class
 com\kaeam\react\service\DefaultWebSecurityConfig.class
+com\kaeam\react\service\ProcessDefRestController.class

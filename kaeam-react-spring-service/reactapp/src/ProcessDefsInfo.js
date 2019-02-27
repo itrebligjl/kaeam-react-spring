@@ -31,6 +31,22 @@ class ProcessDefsInfo extends Component {
         })
     };
 
+    handleTaskList = (cid, pid) => {
+        console.log(`COMPILE NUMBER: 1`);
+        fetch('/rest/server/containers/' + cid + '/processes/' + pid + '/tasks',
+        {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        })
+        // .then(response => response.json())
+        // .then(data => {
+        //     this.setState(data);
+        // });
+    };
+
     render() {
         const haveData = this.state && this.state.processes;
         return (
@@ -52,6 +68,7 @@ class ProcessDefsInfo extends Component {
                                             <tr>
                                                 <td><small>{processdef["process-name"]}</small></td>
                                                 <td><button type="button" class="btn btn-primary" onClick={() => this.handleStartProcess(processdef["container-id"],processdef["process-id"])}>Start</button></td>
+                                                <td><button type="button" class="btn btn-primary" onClick={() => this.handleTaskList(processdef["container-id"],processdef["process-id"])}>Get Tasks</button></td>
                                             </tr>
                                     ))
                                     }
